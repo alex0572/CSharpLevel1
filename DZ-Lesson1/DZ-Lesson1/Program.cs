@@ -46,16 +46,39 @@ namespace DZ_Lesson1
             /* 	Ввести вес и рост человека. Рассчитать и вывести индекс массы тела (ИМТ) 
                 по формуле I=m/(h*h); где m — масса тела в килограммах, h — рост в метрах. Ляшенко А.В.*/
 
-            Console.Write("Введите вес(кг): ");
-            Double m = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите вес(кг): ");
+            //Double m = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите рост(м): ");
-            Double h = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите рост(м): ");
+            //Double h = Convert.ToDouble(Console.ReadLine());
 
-            Double I = m / (h * h);
+            //Double I = m / (h * h);
 
 
-            Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:f2} !"); //используя вывод со знаком $ и спецификатор формата .f2
+            //Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:f2} !"); //используя вывод со знаком $ и спецификатор формата .f2
+
+            //Console.ReadLine();
+
+            #endregion
+
+            #region ДЗ 1-3a Подсчитывает расстояние между точками (Вариант без метода ) 
+
+            /* 	Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 
+                по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).
+                Вывести результат, используя спецификатор формата .f2 (с двумя знаками после запятой); Ляшенко А.В.*/
+
+            Console.WriteLine("Введите x1");
+            Double x1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите x1");
+            Double x2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите y1");
+            Double y1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите y2");
+            Double y2 = Convert.ToDouble(Console.ReadLine());
+
+            Double r = (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
+
+            Console.WriteLine($"Расстояние между точками равно: {r:f2} !"); //используя вывод со знаком $ и спецификатор формата .f2
 
             Console.ReadLine();
 
