@@ -8,6 +8,14 @@ namespace DZ_Lesson1
 {
     class Program
     {
+        #region Метод подсчитывает расстояние между точками
+
+        static double R(double x1, double x2, double y1, double y2)
+        {
+            return (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
+        }
+        #endregion
+
         static void Main(string[] args)
         {
             #region ДЗ 1-1 Анкета 
@@ -67,6 +75,29 @@ namespace DZ_Lesson1
                 по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).
                 Вывести результат, используя спецификатор формата .f2 (с двумя знаками после запятой); Ляшенко А.В.*/
 
+            //Console.WriteLine("Введите x1");
+            //Double x1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите x1");
+            //Double x2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите y1");
+            //Double y1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите y2");
+            //Double y2 = Convert.ToDouble(Console.ReadLine());
+
+            //Double r = (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
+
+            //Console.WriteLine($"Расстояние между точками равно: {r:f2} !"); //используя вывод со знаком $ и спецификатор формата .f2
+
+            //Console.ReadLine();
+
+            #endregion
+
+            #region ДЗ 1-3b* Подсчитывает расстояние между точками (Вариант c методом) 
+
+            /* 	Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 
+                по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).                
+                Выполнить задание, оформив вычисления расстояния между точками в виде метода.  Ляшенко А.В.*/
+
             Console.WriteLine("Введите x1");
             Double x1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите x1");
@@ -76,10 +107,7 @@ namespace DZ_Lesson1
             Console.WriteLine("Введите y2");
             Double y2 = Convert.ToDouble(Console.ReadLine());
 
-            Double r = (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
-
-            Console.WriteLine($"Расстояние между точками равно: {r:f2} !"); //используя вывод со знаком $ и спецификатор формата .f2
-
+            Console.WriteLine($"Расстояние между точками равно: " +  R(x1, x2, y1, y2) + "!");
             Console.ReadLine();
 
             #endregion
