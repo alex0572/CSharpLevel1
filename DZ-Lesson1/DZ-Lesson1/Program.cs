@@ -10,10 +10,10 @@ namespace DZ_Lesson1
     {
         #region Метод подсчитывает расстояние между точками
 
-        static double R(double x1, double x2, double y1, double y2)
-        {
-            return (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
-        }
+        //static double R(double x1, double x2, double y1, double y2)
+        //{
+        //    return (Double)Math.Sqrt((Math.Pow(x2 - x1, 2)) + (Math.Pow(y2 - y1, 2)));
+        //}
         #endregion
 
         static void Main(string[] args)
@@ -98,18 +98,38 @@ namespace DZ_Lesson1
                 по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).                
                 Выполнить задание, оформив вычисления расстояния между точками в виде метода.  Ляшенко А.В.*/
 
-            Console.WriteLine("Введите x1");
-            Double x1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите x1");
-            Double x2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите y1");
-            Double y1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите y2");
-            Double y2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите x1");
+            //Double x1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите x1");
+            //Double x2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите y1");
+            //Double y1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Введите y2");
+            //Double y2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"Расстояние между точками равно: " +  R(x1, x2, y1, y2) + "!");
+            //Console.WriteLine($"Расстояние между точками равно: " +  R(x1, x2, y1, y2) + "!");
+            //Console.ReadLine();
+
+            #endregion
+
+            #region ДЗ 1-4а Обмен значений в двух переменных (с использованием третьей переменной)     
+            /*Написать программу обмена значениями двух переменных: с использованием третьей переменной. Ляшенко А.В.*/
+
+            int a;
+            int b;
+            int t;
+
+            Console.Write("Введите число a: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите число b: ");
+            b = Convert.ToInt32(Console.ReadLine());
+            t = a;           // В t записываем значение a
+            a = b;           // В a записываем b
+            b = t;           // В b записываем сохраненное a
+
+            Console.WriteLine("Переменная а = " + a);
+            Console.WriteLine("Переменная b = " + b);
             Console.ReadLine();
-
             #endregion
         }
     }
