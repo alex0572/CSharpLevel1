@@ -112,21 +112,21 @@ namespace DZ_Lesson2
             #region DZ - 2-3
             //Подсчитать сумму всех нечетных положительных чисел.
 
-            //int num = 0;
-            //int sum = 0;
+            int num = 0;
+            int sum = 0;
 
-            //Console.WriteLine("Вводите целые числа, для завершения введите 0: ");                      
+            Console.WriteLine("Вводите целые числа, для завершения введите 0: ");
 
-            //do
-            //{
-            //    num = int.Parse(Console.ReadLine());
-            //    if (num > 0 && num % 2 == 1)
-            //        sum += num;
+            do
+            {
+                num = int.Parse(Console.ReadLine());
+                if (num > 0 && num % 2 == 1)
+                    sum += num;
 
-            //} while (num != 0);
+            } while (num != 0);
 
-            //Console.WriteLine("Cумму всех нечетных положительных чисел: " + sum);
-            //Console.ReadLine();
+            Console.WriteLine("Cумму всех нечетных положительных чисел: " + sum);
+            Console.ReadLine();
             #endregion
 
             #region DZ - 2-4
@@ -169,38 +169,43 @@ namespace DZ_Lesson2
             /* 	Написать программу, которая запрашивает массу и рост человека, вычисляет его индекс массы и сообщает,
                 нужно ли человеку похудеть, набрать вес или всё в норме.*/
 
-            Console.Write("Введите вес(кг): ");
-            Double m = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите вес(кг): ");
+            //Double m = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите рост(м): ");
-            Double h = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите рост(м): ");
+            //Double h = Convert.ToDouble(Console.ReadLine());
 
-            Double I = m / (h * h);
+            //Double I = m / (h * h);
 
-            if (I >= 18.5 && I <= 25)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Нормальная масса тела!");
-            }
-            else if (I < 18.5)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Наблюдается дефицит массы!");
-                double r = (18.5 - I) * h * h;                
-                Console.WriteLine($"Необходимо набрать {r:0.00} кг для нормализации веса!");
-            }
-            else if (I > 25)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Избыточная масса тела!");
-                double r = (I - 24.99) * h * h;                
-                Console.WriteLine($"Необходимо сбросить {r:0.00} кг для нормализации веса!");
-            }
-                                   
-            Console.ReadLine();
+            //NewMethod(h, I);
+
+            //Console.ReadLine();
 
             #endregion
 
         }
+
+        //private static void NewMethod(double h, double I)
+        //{
+        //    if (I >= 18.5 && I <= 25)
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Green;
+        //        Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Нормальная масса тела!");
+        //    }
+        //    else if (I < 18.5)
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Yellow;
+        //        Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Наблюдается дефицит массы!");
+        //        double r = (18.5 - I) * h * h;
+        //        Console.WriteLine($"Необходимо набрать {r:0.00} кг для нормализации веса!");
+        //    }
+        //    else if (I > 25)
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Red;
+        //        Console.WriteLine($"Индекс массы тела (ИМТ) равен: {I:0.00} ! Избыточная масса тела!");
+        //        double r = (I - 24.99) * h * h;
+        //        Console.WriteLine($"Необходимо сбросить {r:0.00} кг для нормализации веса!");
+        //    }
+        //}
     }
 }
