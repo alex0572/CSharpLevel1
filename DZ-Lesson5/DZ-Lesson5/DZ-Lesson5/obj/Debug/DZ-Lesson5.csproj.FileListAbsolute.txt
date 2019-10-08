@@ -1,0 +1,7 @@
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\bin\Debug\DZ-Lesson5.exe.config
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\bin\Debug\DZ-Lesson5.exe
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\bin\Debug\DZ-Lesson5.pdb
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\obj\Debug\DZ-Lesson5.csprojAssemblyReference.cache
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\obj\Debug\DZ-Lesson5.csproj.CoreCompileInputs.cache
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\obj\Debug\DZ-Lesson5.exe
+E:\GeekBrains\Разработчик C#\C# Уровень 1\CSharpLevel1\DZ-Lesson5\DZ-Lesson5\DZ-Lesson5\obj\Debug\DZ-Lesson5.pdb
